@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Conferencing App</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h1>Video Conferencing</h1>
+  <div id="video-container">
+    <video id="local-video" autoplay muted></video>
+    <video id="remote-video" autoplay></video>
+  </div>
+
+  <div id="controls">
+    <button onclick="startVideo()">Start Video</button>
+    <button onclick="shareScreen()">Share Screen</button>
+    <button onclick="stopMedia()">Stop</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-peer@9/simplepeer.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>
